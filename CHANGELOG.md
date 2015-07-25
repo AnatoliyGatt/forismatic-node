@@ -1,3 +1,10 @@
+1.0.2 / 2015-07-25
+==================
+
+* Fixed critical mistakes in README.md
+* Updated version of all modules
+* Updated version in package.json
+
 1.0.1 / 2015-07-25
 ==================
 
