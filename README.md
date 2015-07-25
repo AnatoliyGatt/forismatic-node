@@ -9,14 +9,14 @@ An asynchronous client library for Forismatic [API](http://forismatic.com/en/api
 
 ## Installation
 
-`npm install forismatic`
+`npm install forismatic-node`
 
 ## Quick Start
 
 The quickest way to get started is by executing following code:
 
 ```javascript
-var forismatic = require("forismatic")();
+var forismatic = require("forismatic-node")();
 
 forismatic.getQuote(function(error, quote) {
     if(!error) {
