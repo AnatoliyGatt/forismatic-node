@@ -28,8 +28,8 @@ describe("helpers", function() {
 
             describe("#deepFreezeObject()", function() {
                 it("should not override #deepFreezeObject()", function() {
-                    helpers.deepFreezeObject = function(value) {
-                        return "#deepFreezeObject(): " + value;
+                    helpers.deepFreezeObject = function() {
+                        return "#deepFreezeObject()";
                     };
 
                     assert.throws(function() {
