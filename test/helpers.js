@@ -2,6 +2,40 @@ var assert = require("assert");
 var helpers = require("../lib/helpers");
 
 describe("helpers", function() {
+    describe("init", function() {
+        describe("should not override helper functions", function() {
+            describe("#escapeJSONString()", function() {
+                it("should not override #escapeJSONString()", function() {
+                    helpers.escapeJSONString = function(value) {
+                        return "#escapeJSONString(): " + value;
+                    };
+
+                    assert.notEqual(helpers.escapeJSONString("1"), "#escapeJSONString(): 1", "#escapeJSONString() should not be overridden");
+                });
+            });
+
+            describe("#deepTrimJSONObject()", function() {
+                it("should not override #escapeJSONString()", function() {
+                    helpers.deepTrimJSONObject = function(value) {
+                        return "#deepTrimJSONObject(): " + value;
+                    };
+
+                    assert.notEqual(helpers.deepTrimJSONObject("1"), "#deepTrimJSONObject(): 1", "#deepTrimJSONObject() should not be overridden");
+                });
+            });
+
+            describe("#deepFreezeObject()", function() {
+                it("should not override #escapeJSONString()", function() {
+                    helpers.deepFreezeObject = function(value) {
+                        return "#deepFreezeObject(): " + value;
+                    };
+
+                    assert.notEqual(helpers.deepTrimJSONObject("1"), "#deepFreezeObject(): 1", "#deepFreezeObject() should not be overridden");
+                });
+            });
+        });
+    });
+
     describe("interface", function() {
         describe("#escapeJSONString()", function() {
             it("should not modify JSON string which is not containing any apostrophes or double quotes", function() {
