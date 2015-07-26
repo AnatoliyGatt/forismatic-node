@@ -174,6 +174,21 @@ describe("forismatic", function() {
                 });
             });
 
+            it("should fail on calling #getQuote() without arguments", function() {
+                assert.throws(function() {
+                    forismatic.getQuote();
+                }, Error);
+            });
+
+            it("should fail on calling #getQuote() with options only", function() {
+                assert.throws(function() {
+                    forismatic.getQuote({
+                        lang: "ru",
+                        key: 123456
+                    });
+                }, Error);
+            });
+
             it("should not override #getQuote()", function() {
                 forismatic.getQuote = function() {
                     return "#getQuote()";
