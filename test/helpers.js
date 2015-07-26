@@ -10,9 +10,7 @@ describe("helpers", function() {
                         return "#escapeJSONString()";
                     };
 
-                    assert.throws(function() {
-                        assert.notEqual(helpers.escapeJSONString(), "#escapeJSONString()", "#escapeJSONString() should not be overridden");
-                    }, Error);
+                    assert.notEqual(helpers.escapeJSONString(), "#escapeJSONString()", "#escapeJSONString() should not be overridden");
                 });
             });
 
@@ -32,9 +30,7 @@ describe("helpers", function() {
                         return "#deepFreezeObject()";
                     };
 
-                    assert.throws(function() {
-                        assert.notEqual(helpers.deepFreezeObject(), "#deepFreezeObject()", "#deepFreezeObject() should not be overridden");
-                    }, Error);
+                    assert.notEqual(helpers.deepFreezeObject(), "#deepFreezeObject()", "#deepFreezeObject() should not be overridden");
                 });
             });
         });
