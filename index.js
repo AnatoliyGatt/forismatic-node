@@ -12,7 +12,7 @@
 /**
  * @public
  * @description Expose function for creating frozen instance of Forismatic.
- * @returns {Function}
+ * @returns {Function} - Function for creating frozen instance of Forismatic.
  */
 
 module.exports = require("./lib/forismatic");
