@@ -6,21 +6,23 @@ describe("helpers", function() {
         describe("should not override helper functions", function() {
             describe("#escapeJSONString()", function() {
                 it("should not override #escapeJSONString()", function() {
-                    helpers.escapeJSONString = function(value) {
-                        return "#escapeJSONString(): " + value;
+                    helpers.escapeJSONString = function() {
+                        return "#escapeJSONString()";
                     };
 
-                    assert.notEqual(helpers.escapeJSONString("1"), "#escapeJSONString(): 1", "#escapeJSONString() should not be overridden");
+                    assert.throws(function() {
+                        assert.notEqual(helpers.escapeJSONString(), "#escapeJSONString()", "#escapeJSONString() should not be overridden");
+                    }, Error);
                 });
             });
 
             describe("#deepTrimJSONObject()", function() {
                 it("should not override #deepTrimJSONObject()", function() {
-                    helpers.deepTrimJSONObject = function(value) {
-                        return "#deepTrimJSONObject(): " + value;
+                    helpers.deepTrimJSONObject = function() {
+                        return "#deepTrimJSONObject()";
                     };
 
-                    assert.notEqual(helpers.deepTrimJSONObject("1"), "#deepTrimJSONObject(): 1", "#deepTrimJSONObject() should not be overridden");
+                    assert.notEqual(helpers.deepTrimJSONObject(), "#deepTrimJSONObject()", "#deepTrimJSONObject() should not be overridden");
                 });
             });
 
@@ -30,7 +32,9 @@ describe("helpers", function() {
                         return "#deepFreezeObject(): " + value;
                     };
 
-                    assert.notEqual(helpers.deepTrimJSONObject("1"), "#deepFreezeObject(): 1", "#deepFreezeObject() should not be overridden");
+                    assert.throws(function() {
+                        assert.notEqual(helpers.deepFreezeObject(), "#deepFreezeObject()", "#deepFreezeObject() should not be overridden");
+                    }, Error);
                 });
             });
         });
