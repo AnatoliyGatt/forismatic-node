@@ -15,7 +15,7 @@ describe("helpers", function() {
             });
 
             describe("#deepTrimJSONObject()", function() {
-                it("should not override #escapeJSONString()", function() {
+                it("should not override #deepTrimJSONObject()", function() {
                     helpers.deepTrimJSONObject = function(value) {
                         return "#deepTrimJSONObject(): " + value;
                     };
@@ -25,7 +25,7 @@ describe("helpers", function() {
             });
 
             describe("#deepFreezeObject()", function() {
-                it("should not override #escapeJSONString()", function() {
+                it("should not override #deepFreezeObject()", function() {
                     helpers.deepFreezeObject = function(value) {
                         return "#deepFreezeObject(): " + value;
                     };
