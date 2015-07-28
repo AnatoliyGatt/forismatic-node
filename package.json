@@ -39,7 +39,11 @@
     "test": "mocha --colors --sort --bail --reporter spec --check-leaks --full-trace --no-timeouts --recursive ./test/*.js"
   },
   "config": {},
-  "dependencies": {},
+  "dependencies": {
+    "deep-freeze-node": "^1.0.5",
+    "deep-trim-node": "^1.0.5",
+    "escape-json-node": "^1.0.1"
+  },
   "devDependencies": {
     "mocha": "^2.2.5"
   },
