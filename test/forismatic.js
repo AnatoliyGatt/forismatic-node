@@ -40,6 +40,7 @@ describe("forismatic", function() {
             it("should respond with valid quote object, requested with no options", function(done) {
                 forismatic.getQuote(function(error, quote) {
                     if(!error) {
+                        console.log(quote);
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
