@@ -18,7 +18,7 @@ describe("forismatic", function() {
         });
 
         it("should not override default request options", function() {
-            forismatic.defaultSettings = {
+            forismatic.defaultRequestOptions = {
                 hostname: "api.forismatic.ru",
                 port: 3000,
                 basePath: "/api/1.0/"
