@@ -28,7 +28,7 @@ describe("forismatic", function() {
         });
     });
 
-    describe("interface", function() {
+    describe("functions", function() {
         describe("#getQuote()", function() {
             function validateQuote(quote) {
                 assert.notEqual(quote, undefined, "quote should not be undefined");
