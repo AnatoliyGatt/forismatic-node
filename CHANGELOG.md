@@ -1,7 +1,16 @@
+1.0.5 / 2015-07-28
+==================
+
+* Updated README.md
+* Updated forismatic.js tests
+* Updated index.js documentation comments
+* Updated forismatic.js documentation comments
+* Replaced helpers.js with new dependencies within forismatic.js
+* Added new dependencies
+
 1.0.4 / 2015-07-26
 ==================
 
-* Updated package on NPM
 * Fixed unexpected behaviour of helper functions, when called without arguments
 * Changed license badge in README.md
 * Updated index.js documentation comments
