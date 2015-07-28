@@ -7,6 +7,8 @@ An asynchronous client library for Forismatic [API](http://forismatic.com/en/api
 [![License][license]][license-url]
 [![Travis Build][travis-image]][travis-url]
 
+[![NPM Statistics][npm-statistics-image]][npm-url]
+
 ## Installation
 
 `npm install forismatic-node`
@@ -108,3 +110,4 @@ Distributed under the [MIT License](LICENSE).
 [license-url]: https://github.com/AnatoliyGatt/forismatic-node/blob/master/LICENSE
 [travis-image]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node/master.svg
 [travis-url]: https://travis-ci.org/AnatoliyGatt/forismatic-node
+[npm-statistics-image]: https://nodei.co/npm/forismatic-node.png?downloads=true&downloadRank=true&stars=true
