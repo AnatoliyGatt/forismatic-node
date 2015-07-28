@@ -3,11 +3,15 @@ var forismatic = require("../lib/forismatic")();
 
 describe("forismatic", function() {
     describe("init", function() {
-        var defaultRequestOptions = {
-            hostname: "api.forismatic.com",
-            port: 80,
-            basePath: "/api/1.0/"
-        };
+        var defaultRequestOptions = {};
+
+        before(function() {
+            defaultRequestOptions = {
+                hostname: "api.forismatic.com",
+                port: 80,
+                basePath: "/api/1.0/"
+            }
+        });
 
         it("should have correct default request options", function() {
             assert.deepEqual(forismatic.defaultRequestOptions, defaultRequestOptions, "default request options should have correct initial property values");
@@ -40,7 +44,6 @@ describe("forismatic", function() {
             it("should respond with valid quote object, requested with no options", function(done) {
                 forismatic.getQuote(function(error, quote) {
                     if(!error) {
-                        console.log(quote);
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
