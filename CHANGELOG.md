@@ -1,6 +1,7 @@
 1.0.6 / 2015-07-29
 ==================
 
+* Updated README.md
 * Updated dependencies
 
 1.0.5 / 2015-07-28
