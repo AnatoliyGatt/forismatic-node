@@ -31,13 +31,13 @@ forismatic.getQuote(function(error, quote) {
 
 If everything went well, you'll see something like this in your console:
 
-```json
+```javascript
 {
-    "quoteText": "Ignorance never settle a question.",
-    "quoteAuthor": "Benjamin Disraeli",
-    "senderName": "",
-    "senderLink": "",
-    "quoteLink": "http://forismatic.com/en/33ae3b318c/"
+    quoteText: "Ignorance never settle a question.",
+    quoteAuthor: "Benjamin Disraeli",
+    senderName: "",
+    senderLink: "",
+    quoteLink: "http://forismatic.com/en/33ae3b318c/"
 }
 ```
 
