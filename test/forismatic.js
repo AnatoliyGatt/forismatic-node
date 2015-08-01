@@ -170,7 +170,7 @@ describe("forismatic", function() {
                     if(!error) {
                         validateQuote(quote);
                     } else {
-                        assert.doesNotThrow(function() {
+                        assert.throws(function() {
                             throw error;
                         }, Error);
                     }
