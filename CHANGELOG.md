@@ -1,3 +1,10 @@
+1.0.8 / 2015-08-01
+==================
+
+* Fixed Accept-Encoding header problem in forismatic.js
+* Updated forismatic.js
+* Updated dependencies
+
 1.0.7 / 2015-07-29
 ==================
 
