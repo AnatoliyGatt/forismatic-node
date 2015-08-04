@@ -32,13 +32,13 @@ describe("forismatic", function() {
         describe("#getQuote()", function() {
             function validateQuote(quote) {
                 assert.notEqual(quote, undefined, "quote should not be undefined");
-                assert.notEqual(quote.quoteText, undefined, "quoteText should not be undefined");
-                assert.notEqual(quote.quoteText, "", "quoteText should not be empty");
-                assert.notEqual(quote.quoteAuthor, undefined, "quoteAuthor should not be undefined");
-                assert.notEqual(quote.senderName, undefined, "senderName should not be undefined");
-                assert.notEqual(quote.senderLink, undefined, "senderLink should not be undefined");
-                assert.notEqual(quote.quoteLink, undefined, "quoteLink should not be undefined");
-                assert.notEqual(quote.quoteLink, "", "quoteLink should not be empty");
+                assert.notEqual(quote.quoteText, undefined, "quote.quoteText should not be undefined");
+                assert.notEqual(quote.quoteText, "", "quote.quoteText should not be empty");
+                assert.notEqual(quote.quoteAuthor, undefined, "quote.quoteAuthor should not be undefined");
+                assert.notEqual(quote.senderName, undefined, "quote.senderName should not be undefined");
+                assert.notEqual(quote.senderLink, undefined, "quote.senderLink should not be undefined");
+                assert.notEqual(quote.quoteLink, undefined, "quote.quoteLink should not be undefined");
+                assert.notEqual(quote.quoteLink, "", "quote.quoteLink should not be empty");
             }
 
             it("should respond with valid quote object, requested with no options", function(done) {
@@ -178,13 +178,13 @@ describe("forismatic", function() {
                 });
             });
 
-            it("should fail on calling #getQuote() without arguments", function() {
+            it("should fail when called without arguments", function() {
                 assert.throws(function() {
                     forismatic.getQuote();
                 }, Error);
             });
 
-            it("should fail on calling #getQuote() with options only", function() {
+            it("should fail when called with options only", function() {
                 assert.throws(function() {
                     forismatic.getQuote({
                         lang: "ru",
@@ -193,7 +193,7 @@ describe("forismatic", function() {
                 }, Error);
             });
 
-            it("should not override #getQuote()", function() {
+            it("should not be overridden", function() {
                 forismatic.getQuote = function() {
                     return "#getQuote()";
                 };
