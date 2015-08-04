@@ -1,6 +1,6 @@
 {
   "name": "forismatic-node",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "An asynchronous client library for Forismatic API.",
   "keywords": [
     "forismatic",
