@@ -43,9 +43,9 @@
   },
   "config": {},
   "dependencies": {
-    "deep-freeze-node": "^1.0.8",
-    "deep-trim-node": "^1.0.8",
-    "escape-json-node": "^1.0.3"
+    "deep-freeze-node": "^1.0.9",
+    "deep-trim-node": "^1.0.9",
+    "escape-json-node": "^1.0.4"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.1.0",
