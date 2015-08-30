@@ -1,4 +1,4 @@
-# Forismatic for Node.js
+![forismatic-node Logo][logo]
 
 An asynchronous client library for Forismatic [API](http://forismatic.com/en/api/).
 
@@ -108,6 +108,8 @@ $ npm test
 ## License
 
 Distributed under the [MIT License](LICENSE).
+
+[logo]: https://cldup.com/LCozDFbBNP.png
 
 [npm-package-url]: https://npmjs.org/package/forismatic-node
 
