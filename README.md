@@ -2,12 +2,12 @@
 
 An asynchronous client library for Forismatic [API](http://forismatic.com/en/api/).
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![License][license]][license-url]
-[![Travis Build][travis-image]][travis-url]
+[![NPM Package Version][npm-package-version-badge]][npm-package-url]
+[![NPM Package License][npm-package-license-badge]][npm-package-license-url]
+[![NPM Package Downloads][npm-package-downloads-badge]][npm-package-url]
+[![Travis CI Build Status][travis-ci-build-status-badge]][travis-ci-build-status-page-url]
 
-[![NPM Statistics][npm-statistics-image]][npm-url]
+[![NPM Package Statistics][npm-package-statistics-badge]][npm-package-url]
 
 ## Installation
 
@@ -102,12 +102,16 @@ $ npm test
 
 Distributed under the [MIT License](LICENSE).
 
-[npm-image]: https://img.shields.io/npm/v/forismatic-node.svg
-[npm-url]: https://npmjs.org/package/forismatic-node
-[downloads-image]: https://img.shields.io/npm/dm/forismatic-node.svg
-[downloads-url]: https://npmjs.org/package/forismatic-node
-[license]: https://img.shields.io/npm/l/forismatic-node.svg
-[license-url]: https://github.com/AnatoliyGatt/forismatic-node/blob/master/LICENSE
-[travis-image]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node/master.svg
-[travis-url]: https://travis-ci.org/AnatoliyGatt/forismatic-node
-[npm-statistics-image]: https://nodei.co/npm/forismatic-node.png?downloads=true&downloadRank=true&stars=true
+[npm-package-url]: https://npmjs.org/package/forismatic-node
+
+[npm-package-version-badge]: https://img.shields.io/npm/v/forismatic-node.svg
+
+[npm-package-license-badge]: https://img.shields.io/npm/l/forismatic-node.svg
+[npm-package-license-url]: http://opensource.org/licenses/MIT
+
+[npm-package-downloads-badge]: https://img.shields.io/npm/dm/forismatic-node.svg
+
+[travis-ci-build-status-badge]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node.svg
+[travis-ci-build-status-page-url]: https://travis-ci.org/AnatoliyGatt/forismatic-node
+
+[npm-package-statistics-badge]: https://nodei.co/npm/forismatic-node.png?downloads=true&downloadRank=true&stars=true
