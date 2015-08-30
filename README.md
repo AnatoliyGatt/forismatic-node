@@ -111,6 +111,9 @@ Distributed under the [MIT License](LICENSE).
 
 [npm-package-downloads-badge]: https://img.shields.io/npm/dm/forismatic-node.svg?style=flat-square
 
+[devDependencies-status-badge]: https://david-dm.org/AnatoliyGatt/forismatic-node/dev-status.svg?style=flat-square
+[devDependencies-status-page-url]: https://david-dm.org/AnatoliyGatt/forismatic-node#info=devDependencies
+
 [travis-ci-build-status-badge]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node.svg?style=flat-square
 [travis-ci-build-status-page-url]: https://travis-ci.org/AnatoliyGatt/forismatic-node
 
