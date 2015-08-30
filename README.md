@@ -5,6 +5,7 @@ An asynchronous client library for Forismatic [API](http://forismatic.com/en/api
 [![NPM Package Version][npm-package-version-badge]][npm-package-url]
 [![NPM Package License][npm-package-license-badge]][npm-package-license-url]
 [![NPM Package Downloads][npm-package-downloads-badge]][npm-package-url]
+[![Dependencies Status][dependencies-status-badge]][dependencies-status-page-url]
 [![devDependencies Status][devDependencies-status-badge]][devDependencies-status-page-url]
 
 [![Travis CI Build Status][travis-ci-build-status-badge]][travis-ci-build-status-page-url]
@@ -112,6 +113,9 @@ Distributed under the [MIT License](LICENSE).
 [npm-package-license-url]: http://opensource.org/licenses/MIT
 
 [npm-package-downloads-badge]: https://img.shields.io/npm/dm/forismatic-node.svg?style=flat-square
+
+[dependencies-status-badge]: https://david-dm.org/AnatoliyGatt/forismatic-node.svg?style=flat-square
+[dependencies-status-page-url]: https://david-dm.org/AnatoliyGatt/forismatic-node#info=dependencies
 
 [devDependencies-status-badge]: https://david-dm.org/AnatoliyGatt/forismatic-node/dev-status.svg?style=flat-square
 [devDependencies-status-page-url]: https://david-dm.org/AnatoliyGatt/forismatic-node#info=devDependencies
