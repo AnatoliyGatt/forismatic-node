@@ -104,14 +104,14 @@ Distributed under the [MIT License](LICENSE).
 
 [npm-package-url]: https://npmjs.org/package/forismatic-node
 
-[npm-package-version-badge]: https://img.shields.io/npm/v/forismatic-node.svg
+[npm-package-version-badge]: https://img.shields.io/npm/v/forismatic-node.svg?style=flat-square
 
-[npm-package-license-badge]: https://img.shields.io/npm/l/forismatic-node.svg
+[npm-package-license-badge]: https://img.shields.io/npm/l/forismatic-node.svg?style=flat-square
 [npm-package-license-url]: http://opensource.org/licenses/MIT
 
-[npm-package-downloads-badge]: https://img.shields.io/npm/dm/forismatic-node.svg
+[npm-package-downloads-badge]: https://img.shields.io/npm/dm/forismatic-node.svg?style=flat-square
 
-[travis-ci-build-status-badge]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node.svg
+[travis-ci-build-status-badge]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node.svg?style=flat-square
 [travis-ci-build-status-page-url]: https://travis-ci.org/AnatoliyGatt/forismatic-node
 
 [npm-package-statistics-badge]: https://nodei.co/npm/forismatic-node.png?downloads=true&downloadRank=true&stars=true
