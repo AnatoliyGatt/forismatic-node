@@ -127,7 +127,7 @@ Distributed under the [MIT License](LICENSE).
 [devDependencies-status-page-url]: https://david-dm.org/AnatoliyGatt/forismatic-node#info=devDependencies
 
 [node-version-badge]: https://img.shields.io/node/v/forismatic-node.svg?style=flat-square
-[node-downloads-page-url]: https://nodejs.org/download/
+[node-downloads-page-url]: https://nodejs.org/en/download/
 
 [travis-ci-build-status-badge]: https://img.shields.io/travis/AnatoliyGatt/forismatic-node.svg?style=flat-square
 [travis-ci-build-status-page-url]: https://travis-ci.org/AnatoliyGatt/forismatic-node
