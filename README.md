@@ -25,7 +25,7 @@ An asynchronous client library for Forismatic [API](http://forismatic.com/en/api
 The quickest way to get started is by executing following code:
 
 ```javascript
-var forismatic = require("forismatic-node")();
+var forismatic = require('forismatic-node')();
 
 forismatic.getQuote(function(error, quote) {
     if(!error) {
@@ -40,11 +40,11 @@ If everything went well, you'll see something like this in your console:
 
 ```javascript
 {
-    quoteText: "Ignorance never settle a question.",
-    quoteAuthor: "Benjamin Disraeli",
-    senderName: "",
-    senderLink: "",
-    quoteLink: "http://forismatic.com/en/33ae3b318c/"
+    quoteText: 'Ignorance never settle a question.',
+    quoteAuthor: 'Benjamin Disraeli',
+    senderName: '',
+    senderLink: '',
+    quoteLink: 'http://forismatic.com/en/33ae3b318c/'
 }
 ```
 
@@ -66,7 +66,7 @@ Requests quote in Russian with manually set key.
 
 ```javascript
 forismatic.getQuote({
-    lang: "ru",
+    lang: 'ru',
     key: 123456
 }, function(error, quote) {
     if(!error) {
@@ -81,7 +81,7 @@ Requests quote in English with auto-generated key.
 
 ```javascript
 forismatic.getQuote({
-    lang: "en",
+    lang: 'en',
     generateKey: true
 }, function(error, quote) {
     if(!error) {
