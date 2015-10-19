@@ -58,7 +58,7 @@ describe('forismatic', function() {
                 forismatic.getQuote({
                     key: 123456
                 }, function(error, quote) {
-                    if(!error) {
+                    if (!error) {
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
