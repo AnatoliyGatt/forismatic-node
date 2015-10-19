@@ -88,7 +88,7 @@ describe('forismatic', function() {
                 forismatic.getQuote({
                     lang: 'en'
                 }, function(error, quote) {
-                    if(!error) {
+                    if (!error) {
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
@@ -104,7 +104,7 @@ describe('forismatic', function() {
                     lang: 'en',
                     key: 123456
                 }, function(error, quote) {
-                    if(!error) {
+                    if (!error) {
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
@@ -120,7 +120,7 @@ describe('forismatic', function() {
                     lang: 'en',
                     generateKey: true
                 }, function(error, quote) {
-                    if(!error) {
+                    if (!error) {
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
