@@ -73,7 +73,7 @@ describe('forismatic', function() {
                 forismatic.getQuote({
                     generateKey: true
                 }, function(error, quote) {
-                    if(!error) {
+                    if (!error) {
                         validateQuote(quote);
                     } else {
                         assert.throws(function() {
