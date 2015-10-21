@@ -41,8 +41,8 @@ describe('forismatic', function () {
                 assert.notEqual(quote.quoteLink, '', 'quote.quoteLink should not be empty');
             }
 
-            it('should respond with valid quote object, requested with no options', function(done) {
-                forismatic.getQuote(function(error, quote) {
+            it('should respond with valid quote object, requested with no options', function (done) {
+                forismatic.getQuote(function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
@@ -54,14 +54,14 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with manually set key', function(done) {
+            it('should respond with valid quote object, requested with manually set key', function (done) {
                 forismatic.getQuote({
                     key: 123456
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -69,14 +69,14 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with generated key', function(done) {
+            it('should respond with valid quote object, requested with generated key', function (done) {
                 forismatic.getQuote({
                     generateKey: true
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -84,14 +84,14 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with language set to English', function(done) {
+            it('should respond with valid quote object, requested with language set to English', function (done) {
                 forismatic.getQuote({
                     lang: 'en'
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -99,15 +99,15 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with language set to English and manually set key', function(done) {
+            it('should respond with valid quote object, requested with language set to English and manually set key', function (done) {
                 forismatic.getQuote({
                     lang: 'en',
                     key: 123456
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -115,15 +115,15 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with language set to English and generated key', function(done) {
+            it('should respond with valid quote object, requested with language set to English and generated key', function (done) {
                 forismatic.getQuote({
                     lang: 'en',
                     generateKey: true
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -131,14 +131,14 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with language set to Russian', function(done) {
+            it('should respond with valid quote object, requested with language set to Russian', function (done) {
                 forismatic.getQuote({
                     lang: 'ru'
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -146,15 +146,15 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with language set to Russian and manually set key', function(done) {
+            it('should respond with valid quote object, requested with language set to Russian and manually set key', function (done) {
                 forismatic.getQuote({
                     lang: 'ru',
                     key: 123456
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -162,15 +162,15 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should respond with valid quote object, requested with language set to Russian and generated key', function(done) {
+            it('should respond with valid quote object, requested with language set to Russian and generated key', function (done) {
                 forismatic.getQuote({
                     lang: 'ru',
                     generateKey: true
-                }, function(error, quote) {
+                }, function (error, quote) {
                     if (!error) {
                         validateQuote(quote);
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -178,14 +178,14 @@ describe('forismatic', function () {
                 });
             });
 
-            it('should fail when called without arguments', function() {
-                assert.throws(function() {
+            it('should fail when called without arguments', function () {
+                assert.throws(function () {
                     forismatic.getQuote();
                 }, Error);
             });
 
-            it('should fail when called with options only', function() {
-                assert.throws(function() {
+            it('should fail when called with options only', function () {
+                assert.throws(function () {
                     forismatic.getQuote({
                         lang: 'ru',
                         key: 123456
@@ -193,12 +193,12 @@ describe('forismatic', function () {
                 }, Error);
             });
 
-            it('should not be overridden', function() {
-                forismatic.getQuote = function() {
+            it('should not be overridden', function () {
+                forismatic.getQuote = function () {
                     return '#getQuote()';
                 };
 
-                assert.throws(function() {
+                assert.throws(function () {
                     assert.notEqual(forismatic.getQuote(), '#getQuote()', '#getQuote() should not be overridden');
                 }, Error);
             });
