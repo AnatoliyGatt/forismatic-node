@@ -2,7 +2,7 @@ var assert = require('assert');
 var forismatic = require('../lib/forismatic')();
 
 describe('forismatic', function () {
-    describe('init', function() {
+    describe('init', function () {
         var defaultRequestOptions = {};
 
         before(function() {
