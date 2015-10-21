@@ -28,8 +28,8 @@ describe('forismatic', function () {
         });
     });
 
-    describe('functions', function() {
-        describe('#getQuote()', function() {
+    describe('functions', function () {
+        describe('#getQuote()', function () {
             function validateQuote(quote) {
                 assert.notEqual(quote, undefined, 'quote should not be undefined');
                 assert.notEqual(quote.quoteText, undefined, 'quote.quoteText should not be undefined');
