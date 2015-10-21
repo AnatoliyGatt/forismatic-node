@@ -5,7 +5,7 @@ describe('forismatic', function () {
     describe('init', function () {
         var defaultRequestOptions = {};
 
-        before(function() {
+        before(function () {
             defaultRequestOptions = {
                 hostname: 'api.forismatic.com',
                 port: 80,
@@ -13,11 +13,11 @@ describe('forismatic', function () {
             }
         });
 
-        it('should have correct default request options', function() {
+        it('should have correct default request options', function () {
             assert.deepEqual(forismatic.defaultRequestOptions, defaultRequestOptions, 'default request options should have correct initial property values');
         });
 
-        it('should not override default request options', function() {
+        it('should not override default request options', function () {
             forismatic.defaultRequestOptions = {
                 hostname: 'api.forismatic.ru',
                 port: 3000,
