@@ -1,3 +1,18 @@
+1.1.2 / 2015-11-01
+==================
+
+* Fix anonymous functions declaration coding style in forismatic.js tests
+* Fix anonymous functions declaration coding style in forismatic.js
+* Fix 'if-else statements' coding style in forismatic.js tests
+* Fix 'try-catch statement' coding style in forismatic.js
+* Fix 'if statements' coding style in forismatic.js
+* Update dev dependencies
+* Update .travis.yml to run tests against node v4.2.0
+* Remove manual deletion script of coverage directory in .travis.yml
+* Replace unencrypted CodeClimate repo_token with encrypted one in .travis.yml
+* Update .travis.yml to run tests against node v4.1.0
+* Update dependencies
+
 1.1.1 / 2015-09-28
 ==================
 
