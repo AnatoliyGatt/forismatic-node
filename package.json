@@ -4,6 +4,7 @@
   "description": "An asynchronous client library for Forismatic API.",
   "keywords": [
     "forismatic",
+    "random",
     "quotes",
     "json",
     "api",
