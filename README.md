@@ -27,7 +27,7 @@ The quickest way to get started is by executing following code:
 ```javascript
 var forismatic = require('forismatic-node')();
 
-forismatic.getQuote(function(error, quote) {
+forismatic.getQuote(function (error, quote) {
     if(!error) {
         console.log(quote);
     } else {
