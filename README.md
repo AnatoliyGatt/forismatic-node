@@ -68,7 +68,7 @@ Requests quote in Russian with manually set key.
 forismatic.getQuote({
     lang: 'ru',
     key: 123456
-}, function(error, quote) {
+}, function (error, quote) {
     if(!error) {
         console.log(quote);
     } else {
