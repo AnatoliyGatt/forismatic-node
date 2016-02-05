@@ -83,7 +83,7 @@ Requests quote in English with auto-generated key.
 forismatic.getQuote({
     lang: 'en',
     generateKey: true
-}, function(error, quote) {
+}, function (error, quote) {
     if(!error) {
         console.log(quote);
     } else {
