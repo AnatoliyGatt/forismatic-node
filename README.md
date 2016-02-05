@@ -69,7 +69,7 @@ forismatic.getQuote({
     lang: 'ru',
     key: 123456
 }, function (error, quote) {
-    if(!error) {
+    if (!error) {
         console.log(quote);
     } else {
         console.error(error);
