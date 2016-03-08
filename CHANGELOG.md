@@ -1,3 +1,21 @@
+1.1.3 / 2015-03-08
+==================
+
+* Update copyright in forismatic.js
+* Update copyright in index.js
+* Update copyright in LICENSE
+* Update dev dependencies
+* Fix 'if-else statements' coding style in README.md
+* Fix anonymous functions declaration coding style in README.md
+* Fix invalid publishConfig value in package.json
+* Add keywords to package.json
+* Remove keyword from package.json
+* Update dependencies
+* Update package.json
+* Update .travis.yml to run tests against node v5.0.0
+* Remove node v4.2.0 from testing environments in .travis.yml
+* Remove node v4.1.0 from testing environments in .travis.yml
+
 1.1.2 / 2015-11-01
 ==================
 
