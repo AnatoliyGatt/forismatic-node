@@ -11,8 +11,8 @@
 
 /**
  * @public
- * @description Expose function to initialize unchangeable instance of Forismatic.
- * @returns {Function} - Function to initialize unchangeable instance of Forismatic.
+ * @description Expose function to initialize instance of Forismatic.
+ * @returns {Function} - Function to initialize instance of Forismatic.
  */
 
 module.exports = require('./lib/forismatic');
