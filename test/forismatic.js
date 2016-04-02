@@ -16,16 +16,6 @@ describe('forismatic', function () {
         it('should have correct default request options', function () {
             assert.deepEqual(forismatic.defaultRequestOptions, defaultRequestOptions, 'default request options should have correct initial property values');
         });
-
-        it('should not override default request options', function () {
-            forismatic.defaultRequestOptions = {
-                hostname: 'api.forismatic.ru',
-                port: 3000,
-                basePath: '/api/1.0/'
-            };
-
-            assert.deepEqual(forismatic.defaultRequestOptions, defaultRequestOptions, 'default request options should not be overridden');
-        });
     });
 
     describe('functions', function () {
