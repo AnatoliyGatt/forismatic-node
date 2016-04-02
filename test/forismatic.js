@@ -31,13 +31,10 @@ describe('forismatic', function () {
 
             it('should respond with valid quote object, requested with no options', function (done) {
                 forismatic.getQuote(function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function() {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -46,13 +43,10 @@ describe('forismatic', function () {
                 forismatic.getQuote({
                     key: 123456
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -61,13 +55,10 @@ describe('forismatic', function () {
                 forismatic.getQuote({
                     generateKey: true
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -76,13 +67,10 @@ describe('forismatic', function () {
                 forismatic.getQuote({
                     lang: 'en'
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -92,13 +80,10 @@ describe('forismatic', function () {
                     lang: 'en',
                     key: 123456
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -108,13 +93,10 @@ describe('forismatic', function () {
                     lang: 'en',
                     generateKey: true
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -123,13 +105,10 @@ describe('forismatic', function () {
                 forismatic.getQuote({
                     lang: 'ru'
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -139,13 +118,10 @@ describe('forismatic', function () {
                     lang: 'ru',
                     key: 123456
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
@@ -155,13 +131,10 @@ describe('forismatic', function () {
                     lang: 'ru',
                     generateKey: true
                 }, function (error, quote) {
-                    if (!error) {
-                        validateQuote(quote);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        return done(error);
                     }
+                    validateQuote(quote);
                     done();
                 });
             });
