@@ -21,14 +21,12 @@ describe('forismatic', function () {
     describe('functions', function () {
         describe('#getQuote()', function () {
             function validateQuote(quote) {
-                assert.notEqual(quote, undefined, 'quote should not be undefined');
-                assert.notEqual(quote.quoteText, undefined, 'quote.quoteText should not be undefined');
-                assert.notEqual(quote.quoteText, '', 'quote.quoteText should not be empty');
+                assert.ok(quote, 'quote should not be undefined, null or empty');
+                assert.ok(quote.quoteText, 'quote.quoteText should not be undefined, null or empty');
                 assert.notEqual(quote.quoteAuthor, undefined, 'quote.quoteAuthor should not be undefined');
                 assert.notEqual(quote.senderName, undefined, 'quote.senderName should not be undefined');
                 assert.notEqual(quote.senderLink, undefined, 'quote.senderLink should not be undefined');
-                assert.notEqual(quote.quoteLink, undefined, 'quote.quoteLink should not be undefined');
-                assert.notEqual(quote.quoteLink, '', 'quote.quoteLink should not be empty');
+                assert.ok(quote.quoteLink, 'quote.quoteLink should not be undefined, null or empty');
             }
 
             it('should respond with valid quote object, requested with no options', function (done) {
