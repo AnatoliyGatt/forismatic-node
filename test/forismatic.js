@@ -182,16 +182,6 @@ describe('forismatic', function () {
                     });
                 }, Error);
             });
-
-            it('should not be overridden', function () {
-                forismatic.getQuote = function () {
-                    return '#getQuote()';
-                };
-
-                assert.throws(function () {
-                    assert.notEqual(forismatic.getQuote(), '#getQuote()', '#getQuote() should not be overridden');
-                }, Error);
-            });
         });
     });
 });
