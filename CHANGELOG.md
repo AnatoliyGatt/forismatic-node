@@ -1,3 +1,16 @@
+1.1.4 / 2016-04-02
+==================
+
+* Remove deep-freeze-node as dependency in package.json
+* Update index.js documentation comments
+* Fix forismatic.js tests
+* Update forismatic.js tests
+* Remove require of deep-freeze-node in forismatic.js
+* Update forismatic.js documentation comments
+* Expose unfrozen instance of Forismatic in forismatic.js
+* Update dev dependencies
+* Update dependencies
+
 1.1.3 / 2015-03-08
 ==================
 
