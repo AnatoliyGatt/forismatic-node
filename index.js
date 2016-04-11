@@ -15,4 +15,4 @@
  * @returns {Function} - Function to initialize instance of Forismatic.
  */
 
-module.exports = require('./lib/forismatic');
+module.exports = require('./lib/forismatic'); 
